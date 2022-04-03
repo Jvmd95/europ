@@ -1,0 +1,20 @@
+{
+  "source": {
+    "path": "inputs/",
+    "dataset": "bookings",
+    "format": "csv"
+  },
+  "transforms": [
+    {
+      "transform": "hot_encoding",
+      "fields": [
+        "vehicle_category"
+      ]
+    }
+  ],
+  "sink": {
+    "path": "outputs/",
+    "dataset": "bookings_cleaned",
+    "format": "jsonl"
+  }
+}
